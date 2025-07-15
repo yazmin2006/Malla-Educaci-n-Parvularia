@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Educación de Párvulos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      color: #4d004d;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #cc0066;
+    }
+    .semestre {
+      border: 2px solid #ff99cc;
+      border-radius: 10px;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #ffe6f0;
+      cursor: pointer;
+    }
+    .contenido {
+      display: none;
+      margin-top: 10px;
+    }
+    .semestre:hover {
+      background-color: #fdd0e8;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>Malla Curricular - Educación de Párvulos</h1>
+
+  <div class="semestre" onclick="toggleContenido(this)">
+    <strong>Semestre 1</strong>
+    <div class="contenido">
+      <ul>
+        <li>Desarrollo y Aprendizaje de la Persona</li>
+        <li>Fundamentos Pedagógicos y Filosóficos</li>
+        <li>Exploración de los Lenguajes Artísticos</li>
+        <li>Perspectivas de la Educación en la Primera Infancia</li>
+        <li>Comunicación Académica en la Universidad</li>
+        <li>Alfabetización Emocional</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="semestre" onclick="toggleContenido(this)">
+    <strong>Semestre 2</strong>
+    <div class="contenido">
+      <ul>
+        <li>Factores del Desarrollo y el Aprendizaje Integral</li>
+        <li>Políticas Educativas y Profesión Docente</li>
+        <li>Identidad Personal y Profesional</li>
+        <li>Metodologías del Juego</li>
+        <li>Familia y Comunidad en la Primera Infancia</li>
+        <li>Taller de Reflexión Pedagógica I</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Agrega más semestres aquí con el mismo formato -->
+
+  <script>
+    function toggleContenido(element) {
+      const contenido = element.querySelector('.contenido');
+      contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
